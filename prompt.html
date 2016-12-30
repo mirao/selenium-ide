@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost/" />
+<title>prompt</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">prompt</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/html/alerts.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Selenium</td>
+	<td>expectedAnswer</td>
+</tr>
+<tr>
+	<td>answerOnNextPrompt</td>
+	<td>Selenium</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnPrompt</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertPrompt</td>
+	<td>What's the best web QA tool?</td>
+	<td></td>
+</tr>
+<!--Verify using text on page-->
+<tr>
+	<td>verifyText</td>
+	<td>id=output</td>
+	<td>${expectedAnswer}</td>
+</tr>
+<!--Verify using variable set in JavaScript prompt()-->
+<tr>
+	<td>verifyEval</td>
+	<td>this.browserbot.getUserWindow().response</td>
+	<td>${expectedAnswer}</td>
+</tr>
+</tbody></table>
+</body>
+</html>

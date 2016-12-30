@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost/" />
+<title>My</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">My</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/html/xpath_test.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>xpath=(//button[@name='pancake'])[3]</td>
+	<td>style</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>${style}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>${style}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=username</td>
+	<td>${style}</td>
+</tr>
+<tr>
+	<td>storeXpathCount</td>
+	<td>//input</td>
+	<td>inputs</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars[&quot;inputs&quot;]+4</td>
+	<td>sum</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars[&quot;sum&quot;]+1</td>
+	<td>sum</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>${sum}+1</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>css=p</td>
+	<td>name</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['name'].toUpperCase()</td>
+	<td>name</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>javascript{storedVars[&quot;name&quot;].toLowerCase()}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=username</td>
+	<td>javascript{storedVars[&quot;name&quot;].toUpperCase()}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${name}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
