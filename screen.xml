@@ -1,0 +1,7 @@
+<testdata>
+<vars Email="qamail1@gmail.com" Remail="qamail1@gmail.com" Password="123456" Rpassword="123456"/>
+<vars Email="qamail2@gmail.com" Remail="qamail2@gmail.com" Password="123456" Rpassword="123456"/>
+<vars Email="qamail3@gmail.com" Remail="qamail3@gmail.com" Password="123456" Rpassword="123456"/>
+<vars Email="qamail4@gmail.com" Remail="qamail4@gmail.com" Password="123456" Rpassword="123456"/>
+<vars Email="qamail5@gmail.com" Remail="qamail5@gmail.com" Password="123456" Rpassword="123456"/>
+</testdata>

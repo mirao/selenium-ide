@@ -1,0 +1,13 @@
+[22-Jan-2017 19:53:17 Europe/Berlin] PHP Fatal error:  Class 'PHPUnit_Extensions_SeleniumTestCase' not found in /home/mira/workspace/selenium-ide/ts1_phpunit.php on line 2
+[22-Jan-2017 19:53:17 Europe/Berlin] PHP Stack trace:
+[22-Jan-2017 19:53:17 Europe/Berlin] PHP   1. {main}() /home/mira/workspace/selenium-ide/ts1_phpunit.php:0
+[22-Jan-2017 19:53:31 Europe/Berlin] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/mira/workspace/selenium-ide/ts1.php on line 10
+[22-Mar-2017 20:11:49 Europe/Berlin] PHP Warning:  require_once(Testing/Selenium.php): failed to open stream: No such file or directory in /home/mira/workspace/selenium-ide/ts1.php on line 3
+[22-Mar-2017 20:11:49 Europe/Berlin] PHP Stack trace:
+[22-Mar-2017 20:11:49 Europe/Berlin] PHP   1. {main}() /home/mira/workspace/selenium-ide/ts1.php:0
+[22-Mar-2017 20:11:49 Europe/Berlin] PHP Fatal error:  require_once(): Failed opening required 'Testing/Selenium.php' (include_path='.:/usr/share/php') in /home/mira/workspace/selenium-ide/ts1.php on line 3
+[22-Mar-2017 20:11:49 Europe/Berlin] PHP Stack trace:
+[22-Mar-2017 20:11:49 Europe/Berlin] PHP   1. {main}() /home/mira/workspace/selenium-ide/ts1.php:0
+[22-Mar-2017 20:12:18 Europe/Berlin] PHP Fatal error:  Class 'PHPUnit_Extensions_SeleniumTestCase' not found in /home/mira/workspace/selenium-ide/ts1_phpunit.php on line 2
+[22-Mar-2017 20:12:18 Europe/Berlin] PHP Stack trace:
+[22-Mar-2017 20:12:18 Europe/Berlin] PHP   1. {main}() /home/mira/workspace/selenium-ide/ts1_phpunit.php:0

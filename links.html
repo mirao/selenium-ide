@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://jobr2.bmdcon.com/" />
+<title>links</title>
+<style type="text/css">.comment {color: #AA33AA; height: 1em}</style></head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">links</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://localhost/html/links.1.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>My testing page</td>
+	<td>title</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>${title}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCssCount</td>
+	<td>css=a</td>
+	<td>linksCnt</td>
+</tr>
+<tr>
+	<td>for</td>
+	<td>$i = 1; $i &lt;= $linksCnt; ++$i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>&#160;&#160;&#160;&#160;clickAndWait</td>
+	<td>css=a:nth-of-type(${i})</td>
+	<td>href</td>
+</tr>
+<tr>
+	<td>&#160;&#160;&#160;&#160;assertNotTitle</td>
+	<td>${title}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>&#160;&#160;&#160;&#160;goBackAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>endFor</td>
+	<td></td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
