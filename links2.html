@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://jobr2.bmdcon.com/" />
+<title>links2</title>
+<style type="text/css">.comment {color: #AA33AA; height: 1em}</style></head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">links2</td></tr>
+</thead><tbody>
+<tr><td colspan="3" class="comment">Get list of all links</td></tr>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>window.document.querySelectorAll(&quot;a&quot;)</td>
+	<td>elements</td>
+</tr>
+<tr><td colspan="3" class="comment">Store the links because object becomes invalid when page is opened</td></tr>
+<tr>
+	<td>for</td>
+	<td>$i = 0; $i &lt; $elements.length; ++$i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>&#160;&#160;&#160;&#160;open</td>
+	<td>&lt;&gt;$elements[$i]&lt;&gt;</td>
+	<td></td>
+</tr>
+<tr>
+	<td>&#160;&#160;&#160;&#160;goBackAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr><td colspan="3" class="comment">    Refresh dead object</td></tr>
+<tr>
+	<td>&#160;&#160;&#160;&#160;storeEval</td>
+	<td>window.document.querySelectorAll(&quot;a&quot;)</td>
+	<td>elements</td>
+</tr>
+<tr>
+	<td>endFor</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
